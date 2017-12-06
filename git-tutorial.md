@@ -1,0 +1,24 @@
+* install git
+
+sudo apt-get install git
+
+* 'fork' github repo (ONCE!)
+* 'clone' github repo to your machine (ONCE!)
+
+git clone https://github.com/huybv1998/os2018.git
+
+* 'change' on your local repo <--- I have done using my text editor
+
+* 'add' files to a commit
+
+git add README.md
+
+* make a 'commit' 
+
+git commit -m "Message that I want to use to describe the changes"
+
+* 'push' your commit to github
+
+git push origin master
+
+
