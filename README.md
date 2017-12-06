@@ -10,5 +10,5 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
+* Name: Example Name
 * ID: *YourIdHere*
