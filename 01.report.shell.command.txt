@@ -1,0 +1,59 @@
+johnrico@USS-Enterprise:~$ echo hello world
+hello world
+
+johnrico@USS-Enterprise:~$ passwd
+Changing password for johnrico.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+johnrico@USS-Enterprise:~$ date
+Thứ sáu, 12 Tháng một năm 2018 21:03:11 ICT
+
+johnrico@USS-Enterprise:~$ hostname
+USS-Enterprise
+
+johnrico@USS-Enterprise:~$ arch
+x86_64
+
+johnrico@USS-Enterprise:~$ uname -a
+Linux USS-Enterprise 4.8.0-36-generic #36~16.04.1-Ubuntu SMP Sun Feb 5 09:39:57 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+johnrico@USS-Enterprise:~$ dmesg
+[ 6508.028144] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 6571.385562] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 6634.458985] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 6634.562278] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 6761.027023] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 6887.841483] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 6950.804009] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 7077.839615] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 7330.537224] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+[ 7330.692363] ath10k_pci 0000:02:00.0: no channel configured; ignoring frame(s)!
+
+johnrico@USS-Enterprise:~$ uptime
+ 21:04:54 up  2:09,  1 user,  load average: 0,97, 0,59, 0,77
+
+johnrico@USS-Enterprise:~$ who am i
+
+johnrico@USS-Enterprise:~$ whoami
+johnrico
+
+johnrico@USS-Enterprise:~$ who
+johnrico tty7         2018-01-13 01:56 (:0)
+johnrico@USS-Enterprise:~$ id
+
+uid=1000(johnrico) gid=1000(johnrico) groups=1000(johnrico),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+johnrico@USS-Enterprise:~$ last
+wtmp begins Fri Jan 12 19:01:04 2018
+
+johnrico@USS-Enterprise:~$ finger
+Login     Name          Tty      Idle  Login Time   Office     Office Phone
+johnrico  wH1te-l0tUs   tty7           Jan 13 01:56 (:0)
+
+johnrico@USS-Enterprise:~$ w
+ 21:05:58 up  2:10,  1 user,  load average: 0,77, 0,60, 0,75
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+johnrico tty7     :0               01:56     ?     8:05   0.17s /sbin/upstart -
+
