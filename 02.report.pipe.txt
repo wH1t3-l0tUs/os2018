@@ -1,0 +1,27 @@
+johnrico@USS-Enterprise:~$ ls | grep list
+
+johnrico@USS-Enterprise:~$ wc -l /etc/passwd
+40 /etc/passwd
+
+johnrico@USS-Enterprise:~$ free -h | grep Mem: | awk '{print $2}'
+7,7G
+
+johnrico@USS-Enterprise:~$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           7,7G        2,9G        1,9G        909M        2,9G        3,6G
+Swap:          2,7G          0B        2,7G
+
+johnrico@USS-Enterprise:~$ cat /proc/cpuinfo | grep "core"
+core id		: 0
+cpu cores	: 2
+core id		: 1
+cpu cores	: 2
+core id		: 0
+cpu cores	: 2
+core id		: 1
+cpu cores	: 2
+
+johnrico@USS-Enterprise:~$ cd ~/Pictures
+johnrico@USS-Enterprise:~/Pictures$ find -name "*.jpg" | wc -l
+0 
+
