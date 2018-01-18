@@ -1,0 +1,60 @@
+johnrico@USS-Enterprise:~$ cat /proc/sched_debug | grep 'systemd'
+         systemd     1       301.054536      1681   120         0.000000      1304.433966         0.000000 0 0 /autogroup-2
+         systemd  1324         5.077656        18   120         0.000000        15.890212         0.000000 0 0 /autogroup-99
+   systemd-udevd   282       395.259250       655   120         0.000000       577.397183         0.000000 0 0 /autogroup-12
+ systemd-timesyn   751         2.085084        58   120         0.000000        16.846769         0.000000 0 0 /autogroup-35
+ systemd-journal   258        97.445431      1140   120         0.000000       385.596740         0.000000 0 0 /autogroup-5
+  systemd-logind   831        14.690557       650   120         0.000000        69.396265         0.000000 0 0 /autogroup-44
+
+johnrico@USS-Enterprise:~$ cat /proc/1/sched
+systemd (1, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :       1598956.712180
+se.vruntime                                  :           301.054536
+se.sum_exec_runtime                          :          1304.433966
+se.nr_migrations                             :                  209
+nr_switches                                  :                 1681
+nr_voluntary_switches                        :                 1402
+nr_involuntary_switches                      :                  279
+se.load.weight                               :              1048576
+se.avg.load_sum                              :               351181
+se.avg.util_sum                              :               285045
+se.avg.load_avg                              :                    7
+se.avg.util_avg                              :                    5
+se.avg.last_update_time                      :        1598956712180
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                  223
+mm->numa_scan_seq                            :                    0
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+
+johnrico@USS-Enterprise:~$ cat /proc/1324/sched
+systemd (1324, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :        224287.121394
+se.vruntime                                  :             5.077656
+se.sum_exec_runtime                          :            15.890212
+se.nr_migrations                             :                    6
+nr_switches                                  :                   18
+nr_voluntary_switches                        :                   15
+nr_involuntary_switches                      :                    3
+se.load.weight                               :              1048576
+se.avg.load_sum                              :               193536
+se.avg.util_sum                              :                73728
+se.avg.load_avg                              :                    0
+se.avg.util_avg                              :                    0
+se.avg.last_update_time                      :         224287121394
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                  233
+mm->numa_scan_seq                            :                    0
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+
