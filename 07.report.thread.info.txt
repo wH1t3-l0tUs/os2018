@@ -1,0 +1,22 @@
+johnrico@USS-Enterprise:~$ ps -e | grep chrome
+ 2528 ?        00:01:34 chrome
+ 2539 ?        00:00:00 chrome
+ 2543 ?        00:00:00 chrome
+ 2599 ?        00:00:44 chrome
+ 2602 ?        00:00:00 chrome
+ 2687 ?        00:00:01 chrome
+ 2704 ?        00:00:00 chrome
+ 2801 ?        00:00:08 chrome
+ 5074 ?        00:00:02 chrome
+ 5106 ?        00:00:25 chrome
+ 5120 ?        00:00:06 chrome
+ 5360 ?        00:00:06 chrome
+ 5380 ?        00:00:02 chrome
+
+johnrico@USS-Enterprise:~$ ps -o nlwp 2528
+NLWP
+  38
+
+johnrico@USS-Enterprise:~$ ls /proc/2528/task | wc -w
+38
+
